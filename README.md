@@ -1,4 +1,4 @@
-PPT: https://www.canva.com/design/DAFmyaZobYs/WCYOX2sFScSixaNc5y8nWA/edit?utm_content=DAFmyaZobYs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+PPT: https://www.canva.com/design/DAFmyu1VEvs/SLisCwhskHhKxyKQVh1wJA/edit?utm_content=DAFmyu1VEvs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 Keeping your Environment clean doesn't always mean not throwing garbage around but it also means to actually clean the mess which we created.
 
