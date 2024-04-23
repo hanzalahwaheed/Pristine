@@ -7,7 +7,6 @@ const bodyParser = require("body-parser");
 
 // Middleware
 router.use(bodyParser.json());
-
 router.post("/cleanimgret", async (req, res) => {
   const reporterId = req.body.reporterId;
 

@@ -19,7 +19,6 @@ const upload = multer({ storage: storage });
 
 router.post(
   "/accordionroute",
-
   async (req, res) => {
     try {
       res.send([global.placed_data]);
@@ -33,7 +32,6 @@ router.post(
 router.post(
   "/accordionsubmitroute",
   upload.single("cleanImg"),
-
   async (req, res) => {
     try {
       const filePath = req.file.path;

@@ -9,7 +9,6 @@ const jwsSecret = "abhinavnaman1ds21cg001#001$79038";
 
 router.post(
   "/createuser",
-
   [
     body("name").notEmpty().withMessage("Name is required"),
     body("email").isEmail().withMessage("Invalid email"),
