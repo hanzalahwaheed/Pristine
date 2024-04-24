@@ -28,8 +28,8 @@ const PlaceSchema = new Schema({
   },
   cleanImg: {
     type: String,
-    require: true
-  }
+    require: true,
+  },
 });
 
 module.exports = mongoose.model("Place", PlaceSchema);

@@ -17,17 +17,14 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.post(
-  "/accordionroute",
-  async (req, res) => {
-    try {
-      res.send([global.placed_data]);
-    } catch (e) {
-      console.log(e);
-      res.send("server error");
-    }
+router.post("/accordionroute", async (req, res) => {
+  try {
+    res.send([global.placed_data]);
+  } catch (e) {
+    console.log(e);
+    res.send("server error");
   }
-);
+});
 
 router.post(
   "/accordionsubmitroute",
@@ -40,7 +37,7 @@ router.post(
 
       const update = {
         cleanerId: req.body.cleanerId,
-        cleanImg: fileName
+        cleanImg: fileName,
       };
 
       const updatedPlaceDoc = await Place.findOneAndUpdate(filter, update, {

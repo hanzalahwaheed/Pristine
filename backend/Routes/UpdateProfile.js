@@ -9,13 +9,13 @@ router.post("/updateprofile", async (req, res) => {
 
     const update = {
       name: req.body.name,
-      email: req.body.email
+      email: req.body.email,
     };
 
     // await User.findOne({ country: 'Croatia' }).exec();
 
     const updatedUserDoc = await User.findOneAndUpdate(filter, update, {
-      new: true
+      new: true,
     });
 
     // console.log(updatedUserDoc);
@@ -25,7 +25,7 @@ router.post("/updateprofile", async (req, res) => {
   } catch (e) {
     console.log(e);
     res.status(500).json({
-      success: false
+      success: false,
     });
   }
 });

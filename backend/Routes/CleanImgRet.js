@@ -68,5 +68,4 @@ router.post("/setisactive", async (req, res) => {
   }
 });
 
-
 module.exports = router;
