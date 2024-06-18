@@ -1,5 +1,6 @@
 PPT: https://www.canva.com/design/DAFmyu1VEvs/SLisCwhskHhKxyKQVh1wJA/edit?utm_content=DAFmyu1VEvs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+# Pristine- a city cleaning app
 Keeping your Environment clean doesn't always mean not throwing garbage around but it also means to actually clean the mess which we created.
 
 Cleaning your city is also not always the responsibility of the government and the NGOs but also the citizens that is we are equally responsible for cleaning our city. 
@@ -13,12 +14,8 @@ Dream of a clean city is still a dream of many.
 Let's clean our nation!!!
 #SwatchBharatAbhiyaan
 
-
-
-
-Pristine- a city cleaning app
-
-Idea 1: It's related to cleaning the cities which are highly polluted. 1st is using this website to create awareness which is basic.
+---
+It's related to cleaning the cities which are highly polluted. 1st is using this website to create awareness which is basic.
 
 Cleaning the city is a very important thing which everyone knows, still, some cities are so dirty. So we need something more to create motivation for ordinary people. Garbage management and all are not enough, people need to participate in it
 

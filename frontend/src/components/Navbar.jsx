@@ -32,13 +32,19 @@ export default function Navbar() {
 
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end" style={{marginLeft:"350px"}}>
-              <Link className="nav-link active  me-md-2" aria-current="page" to="/">
-                Home
-              </Link>
-              {localStorage.getItem("authToken") ? (
-                <>
-                  
+              <div
+                className="d-grid gap-2 d-md-flex justify-content-md-end"
+                style={{ marginLeft: "350px" }}
+              >
+                <Link
+                  className="nav-link active  me-md-2"
+                  aria-current="page"
+                  to="/"
+                >
+                  Home
+                </Link>
+                {localStorage.getItem("authToken") ? (
+                  <>
                     <Link className="nav-link" to="/dashboard">
                       Dashboard
                     </Link>
@@ -51,25 +57,30 @@ export default function Navbar() {
                     <Link className="nav-link" to="/profile">
                       Profile
                     </Link>
-                    <span style={{marginTop:"7px", marginLeft:"300px", marginRight:"20px"}} >
-                    {localStorage.getItem("userEmail")}
+                    <span
+                      style={{
+                        marginTop: "7px",
+                        marginLeft: "300px",
+                        marginRight: "20px",
+                      }}
+                    >
+                      {localStorage.getItem("userEmail")}
                     </span>
-                    
+
                     <button
                       onClick={handleLogout}
-                      className="  rounded btn btn-danger btn-sm"
+                      className="rounded btn btn-danger btn-sm"
                     >
                       {" "}
                       Logout
                     </button>
-           
-                </>
-              ) : (
-                <Link className="nav-link" to="/register">
-                  Register
-                </Link>
-              )}
-            </div>
+                  </>
+                ) : (
+                  <Link className="nav-link" to="/register">
+                    Register
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
         </div>

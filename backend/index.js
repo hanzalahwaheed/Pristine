@@ -2,13 +2,11 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 5000;
 const mongoDB = require("./db");
 const dotenv = require("dotenv");
 dotenv.config();
 
 app.use(express.json());
-
 app.use(cors());
 
 app.use(function (req, res, next) {
@@ -21,11 +19,11 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use("", require("./Routes/CreateUser"));
-app.use("", require("./Routes/ReportRoute"));
-app.use("", require("./Routes/accordionRoute"));
-app.use("", require("./Routes/UpdateProfile"));
-app.use("", require("./Routes/CleanImgRet"));
+app.use("", require("./routes/CreateUser"));
+app.use("", require("./routes/ReportRoute"));
+app.use("", require("./routes/accordionRoute"));
+app.use("", require("./routes/UpdateProfile"));
+app.use("", require("./routes/CleanImgRet"));
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -33,6 +31,7 @@ app.get("/", (req, res) => {
 
 mongoDB();
 
-app.listen(port, () => {
-  console.log(`app listening on port ${port}`);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`app listening on port ${PORT}`);
 });

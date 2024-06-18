@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
-import Card from '../components/Card'
-import Hero from '../components/Hero'
-import SignIn from '../components/SignIn'
-import Carosel from '../components/Carosel'
-import LeaderBoard from '../components/LeaderBoard'
+import React, { useState } from "react";
+import Card from "../components/Card";
+import Hero from "../components/Hero";
+import SignIn from "../components/SignIn";
+import Carosel from "../components/Carosel";
+import LeaderBoard from "../components/LeaderBoard";
 
 export default function Home() {
   const [accordionOpen, setAccordionOpen] = useState(null);
@@ -15,17 +15,16 @@ export default function Home() {
     }
   };
   return (
-    <div className='m-4 mt-200' style={{}}>
-    <Hero/>
-    {/* <hr /> */}
-    {/* <SignIn/> */}
-    <hr /><br/>{" "}<br/>{" "}
-    <LeaderBoard/>
-  
-    <Carosel />
-
-
-{/* 
+    <div className="m-4 mt-200" style={{}}>
+      <Hero />
+      {/* <hr /> */}
+      {/* <SignIn/> */}
+      <br />
+      <br />
+      <br />
+      <LeaderBoard />
+      <Carosel />
+      {/* 
     <div class="accordion " id="accordionExample" style={{
           width: "65%",
           margin: "auto",
@@ -69,73 +68,77 @@ export default function Home() {
     </div>
   </div>
 </div> */}
-      
-
-<div>
-      <div
-        className="accordion  "
-        id="accordionFlushExample"
-        style={{
-          width: "65%",
-          margin: "auto",
-          padding: "10px",
-          marginBottom: "10px",
-        }}
-      >
-        <div className="accordion-item rounded">
-          <h2 className="accordion-header rounded" id="flush-headingOne">
-            <button
-              className="accordion-button rounded"
-              type="button"
-              onClick={() => toggleAccordion(0)}
-              style={{
-                backgroundColor: accordionOpen === 0 ? "#00BC8C" : "",
-                color: accordionOpen === 0 ? "white" : "",
-              }}
+      <div>
+        <div
+          className="accordion  "
+          id="accordionFlushExample"
+          style={{
+            width: "65%",
+            margin: "auto",
+            padding: "10px",
+            marginBottom: "10px",
+          }}
+        >
+          <div className="accordion-item rounded">
+            <h2 className="accordion-header rounded" id="flush-headingOne">
+              <button
+                className="accordion-button rounded"
+                type="button"
+                onClick={() => toggleAccordion(0)}
+                style={{
+                  backgroundColor: accordionOpen === 0 ? "#00BC8C" : "",
+                  color: accordionOpen === 0 ? "white" : "",
+                }}
+              >
+                #SwatchBharatAbhiyaan
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              className={`accordion-collapse collapse ${
+                accordionOpen === 0 ? "show" : ""
+              }`}
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
             >
-             #SwatchBharatAbhiyaan
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            className={`accordion-collapse collapse ${
-              accordionOpen === 0 ? "show" : ""
-            }`}
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div className="accordion-body rounded">
-              <div className="container">
-                <div className="row">
-             
-                  <div className="col">
-                    <ul className="list-group list-group-flush">
-                      <li className="list-group-item">#SwatchBharatAbhiyaan</li>
-                      <li className="list-group-item">
-                      Keeping your Environment clean doesn't always mean not throwing garbage around but it also means to actually clean the mess which we created.
+              <div className="accordion-body rounded">
+                <div className="container">
+                  <div className="row">
+                    <div className="col">
+                      <ul className="list-group list-group-flush">
+                        <li className="list-group-item">
+                          #SwatchBharatAbhiyaan
+                        </li>
+                        <li className="list-group-item">
+                          Keeping your Environment clean doesn&apos;t always
+                          mean not throwing garbage around but it also means to
+                          actually clean the mess which we created. Cleaning
+                          your city is also not always the responsibility of the
+                          government and the NGOs but also the citizens that is
+                          we are equally responsible for cleaning our city.
+                          Hence, We have created a web app called Pristine which
+                          means clean and pure, its purpose it that anyone who
+                          wants to clean his locality and need help in doing
+                          that, they can post a request with an image in this
+                          portal and anyone who is willing to help in cleaning
+                          his/her own city can then upload the clean place image
+                          as a fellow volunteer. As soon as the person who had
+                          posted, verifies that the place is clean , the
+                          volunteer receives a certificate from the government
+                          in his/her email automatically. It works as a driving
+                          force and creates a sense of Responsibility. There
+                          will be a leaderboard which shows the number of
+                          locations one has cleaned as well which will motivate
+                          people to Clean more and more. Dream of a clean city
+                          is still a dream of many. Let&apos;s clean our
+                          nation!!!
+                        </li>
+                      </ul>
+                      <br />
 
-Cleaning your city is also not always the responsibility of the government and the NGOs but also the citizens that is we are equally responsible for cleaning our city. 
-
-Hence,
-We have created a web app called Pristine which means clean and pure, its purpose it that anyone who wants to clean his locality and need help in doing that, they can post a request with an image in this portal and anyone who is willing to help in cleaning his/her own city can then upload the clean place image as a fellow volunteer.
-
-As soon as the person who had posted, verifies that the place is clean , the volunteer receives a certificate from the government in his/her email automatically. It works as a driving force and creates a sense of Responsibility. There will be a leaderboard which shows the number of locations one has cleaned as well which will motivate people to Clean more and more.
-
-Dream of a clean city is still a dream of many.
-Let's clean our nation!!!
-                      </li>
-                   
-        
-                    </ul>
-                    <br />
-              
-
-                    <div className="card-body">
-                    
-            
+                      <div className="card-body"></div>
                     </div>
                   </div>
- 
                 </div>
               </div>
             </div>
@@ -143,6 +146,5 @@ Let's clean our nation!!!
         </div>
       </div>
     </div>
-    </div>
-  )
+  );
 }

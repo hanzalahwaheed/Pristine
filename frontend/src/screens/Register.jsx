@@ -1,6 +1,6 @@
 //Register.jsx
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [credentials, setCredentials] = useState({
@@ -9,6 +9,7 @@ export default function Register() {
     password: "",
   });
   const [register, setRegister] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,6 +38,7 @@ export default function Register() {
         alert("Enter valid credentials");
       } else {
         alert("Registeration Successful !!");
+        navigate("/");
         setRegister(true);
       }
     } catch (error) {
